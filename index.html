@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyWebsite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">MyWebsite</div>
+
+        <!-- Hamburger Button -->
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">WELCOME TO MY WEBSITE</p>
+
+            <h1>Build Your Online Presence 🚀</h1>
+
+            <p class="hero-text">
+                Modern, beautiful and mobile-friendly websites
+                for businesses and individuals.
+            </p>
+
+            <a href="#booking" class="hero-button">
+                Book an Appointment
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <p class="section-label">ABOUT US</p>
+
+        <h2>Who We Are</h2>
+
+        <p>
+            We help businesses create a strong online presence
+            with modern and professional websites.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services">
+
+        <p class="section-label">WHAT WE DO</p>
+
+        <h2>My Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+
+                <h3>Website Design</h3>
+
+                <p>
+                    Modern and attractive designs for your business.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+
+                <h3>Website Development</h3>
+
+                <p>
+                    Fast and responsive websites that work on
+                    mobile and desktop.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+
+                <h3>Mobile Friendly</h3>
+
+                <p>
+                    Websites that look great on every screen size.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-section">
+
+        <p class="section-label">CLIENT REVIEWS</p>
+
+        <h2>What People Say</h2>
+
+        <div class="testimonials-container">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The website looks amazing and works perfectly
+                    on my phone."
+                </p>
+
+                <h3>Rahul Sharma</h3>
+
+                <span>Business Owner</span>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Very professional design and excellent
+                    communication."
+                </p>
+
+                <h3>Priya Verma</h3>
+
+                <span>Photographer</span>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Simple, clean and exactly what I needed
+                    for my business."
+                </p>
+
+                <h3>Amit Kumar</h3>
+
+                <span>Shop Owner</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+
+        <p class="section-label">OUR WORK</p>
+
+        <h2>Gallery</h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding Photography">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80"
+                    alt="Event">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80"
+                    alt="Business Event">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+                    alt="Celebration">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding">
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80"
+                    alt="Couple">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+
+        <button id="closeLightbox" class="close-lightbox">
+            &times;
+        </button>
+
+        <img id="lightboxImage" src="" alt="Large Image">
+
+    </div>
+
+
+    <!-- BOOKING -->
+    <section id="booking" class="booking-section">
+
+        <p class="section-label">BOOKING</p>
+
+        <h2>Book an Appointment 📅</h2>
+
+        <p class="booking-text">
+            Fill in your details and send your appointment request.
+        </p>
+
+
+        <form id="bookingForm" class="booking-form">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <input
+                type="date"
+                id="appointmentDate"
+                required
+            >
+
+            <input
+                type="time"
+                id="appointmentTime"
+                required
+            >
+
+            <textarea
+                id="customerMessage"
+                placeholder="Tell us what you need..."
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit" class="booking-button">
+                Book Appointment on WhatsApp
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+        <p class="section-label">CONTACT US</p>
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Have a project in mind? Contact us today.
+        </p>
+
+        <button id="contactButton">
+            Contact on WhatsApp
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 MyWebsite. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

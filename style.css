@@ -1,0 +1,600 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111827;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #111827;
+
+    padding: 18px 20px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* Hamburger */
+
+.menu-button {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 6px 10px;
+
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 550px;
+
+    background-color: #2563eb;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-small {
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    color: white;
+
+    font-size: 50px;
+
+    margin: 20px 0;
+}
+
+.hero-text {
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 25px;
+
+    background-color: white;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+section {
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+section h2 {
+    font-size: 36px;
+
+    margin: 10px 0 20px;
+}
+
+section > p:not(.section-label) {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#services {
+    background-color: #f8fafc;
+}
+
+.services-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.service-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    height: auto;
+}
+
+.service-icon {
+    font-size: 40px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials-section {
+    background-color: white;
+}
+
+.testimonials-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.testimonial-card {
+    background-color: #f8fafc;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.stars {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.testimonial-card p {
+    line-height: 1.6;
+}
+
+.testimonial-card span {
+    color: #6b7280;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section {
+    background-color: #f8fafc;
+}
+
+.gallery-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    height: 250px;
+
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.lightbox img {
+    max-width: 95%;
+
+    max-height: 85%;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.close-lightbox {
+    position: absolute;
+
+    top: 20px;
+
+    right: 25px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking-section {
+    background-color: #111827;
+
+    color: white;
+}
+
+.booking-section .section-label {
+    color: #60a5fa;
+}
+
+.booking-section h2 {
+    color: white;
+}
+
+.booking-text {
+    color: #d1d5db;
+}
+
+.booking-form {
+    max-width: 600px;
+
+    margin: 40px auto 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-button {
+    padding: 15px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #22c55e;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background-color: #2563eb;
+
+    color: white;
+}
+
+.contact-section .section-label {
+    color: #bfdbfe;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p:not(.section-label) {
+    color: white;
+}
+
+#contactButton {
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #2563eb;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #030712;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 18px 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding-top: 15px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 10px;
+
+        margin: 2px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+}
